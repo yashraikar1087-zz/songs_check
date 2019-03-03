@@ -5,9 +5,12 @@ const SongDetail = ({ song }) => {
   if (song) {
     return (
       <div>
-        <div>Song Detail</div>
-        <div>{song.title}</div>
-        <div>{song.duration}</div>
+        <h3>Details For</h3>
+        <p>
+          Title: {song.title}
+          <br />
+          Duration: {song.duration}
+        </p>
       </div>
     );
   } else {
